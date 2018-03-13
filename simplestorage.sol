@@ -11,5 +11,4 @@ contract SimpleStorage {
     function get() public constant returns (uint) {
         return storedData;
     }
-
 }
