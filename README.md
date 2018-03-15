@@ -1,1 +1,1 @@
-# solidity_study
+# dapp_study
