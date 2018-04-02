@@ -1,0 +1,183 @@
+[
+    {
+      "constant": true,
+      "inputs": [
+        
+      ],
+      "name": "getSurveyMemberList",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address[]"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        
+      ],
+      "name": "surveyOwner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "components": [
+            {
+              "name": "surveyKey",
+              "type": "uint8"
+            },
+            {
+              "name": "choiceValue",
+              "type": "uint256"
+            },
+            {
+              "name": "rankValue",
+              "type": "uint256"
+            },
+            {
+              "name": "subjectiveValue",
+              "type": "string"
+            }
+          ],
+          "name": "surveyResult",
+          "type": "tuple[]"
+        }
+      ],
+      "name": "set",
+      "outputs": [
+        
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "addr",
+          "type": "address"
+        }
+      ],
+      "name": "getSurveyResult",
+      "outputs": [
+        {
+          "components": [
+            {
+              "name": "surveyKey",
+              "type": "uint8"
+            },
+            {
+              "name": "choiceValue",
+              "type": "uint256"
+            },
+            {
+              "name": "rankValue",
+              "type": "uint256"
+            },
+            {
+              "name": "subjectiveValue",
+              "type": "string"
+            }
+          ],
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "surveyMemberList",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        
+      ],
+      "name": "getSurveyCount",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "address"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "surveyMap",
+      "outputs": [
+        {
+          "name": "surveyKey",
+          "type": "uint8"
+        },
+        {
+          "name": "choiceValue",
+          "type": "uint256"
+        },
+        {
+          "name": "rankValue",
+          "type": "uint256"
+        },
+        {
+          "name": "subjectiveValue",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ]

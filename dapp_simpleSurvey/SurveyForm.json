@@ -1,0 +1,47 @@
+[
+    {
+        "surveyKey" : 0,
+        "choiceValue": 3
+    },
+    {
+        "surveyKey" : 1,
+        "rankValue" : 5
+    },
+    {
+        "surveyKey" : 2,
+        "subjectiveValue": "I have no idea."
+    }
+]
+
+
+[
+    {
+      "components": [
+        {
+          "name": "surveyKey",
+          "type": "uint8"
+        },
+        {
+          "name": "choiceValue",
+          "type": "uint256"
+        },
+        {
+          "name": "rankValue",
+          "type": "uint256"
+        },
+        {
+          "name": "subjectiveValue",
+          "type": "string"
+        }
+      ],
+      "name": "surveyResult",
+      "type": "tuple[]"
+    }
+]
+
+struct SurveyForm {
+    SurveyChoices surveyKey;
+    uint choiceValue;
+    uint rankValue;
+    string subjectiveValue;
+}
