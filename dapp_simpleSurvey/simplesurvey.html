@@ -9,35 +9,40 @@
             body {margin-left:50px}
             #storedData {font-size: 300%; margin-right: 10px;}
             #newValue {width:200px; margin-right: 10px; text-align: right;}
+            #surveyResult {width:200px; margin-right: 10px; text-align: right;}
         </style>
     </head>
     <body>
         <h3>Simple Survey Dapp Example</h3>
         <ul>
-            <li>Contract Address: <span id="contractAddr"></span></li>
+            <li>
+                Contract Address: <span id="contractAddr"></span>
+                <button onclick="createContract()">Create Contract</button> 
+            </li>
             <li>My Account Address: <span id="accountAddr"></span></li>
-            <li>Stored Contract Value: <span id="storedData"></span>
-              <button onclick="getValue()">Refresh</button> (Current Block: <span id="lastBlock"></span>)
+            <li>
+                <input id="newValue" type="text"><button onclick="sendTransaction()">transfer ether to jeahyun</button>
+                <div id="balance"></div>
             </li>
             <li>
-              <input id="newValue" type="text"><button onclick="setValue()">Update with new Value</button>
-              <div id="result"></div>
+                <input id="surveyResult" type="text"><button onclick="setSurveyResult()">set survey result</button>
             </li>
-            <li>The page is automatically updated, after pending transaction(update new value) is verified in blockchain.</li>
+            <li>
+                <button onclick="getSurveyCount()">get survey count</button><span id="surveyCount"></span>
+            </li>
         </ul>
 
         Contract source
-        <script src="https://gist.github.com/looksgoood/db201cbd37a825a5dd692fa8c659dbb1.js"></script>
+        <script src="https://gist.github.com/looksgoood/064fbd4675a2255a2b3642136cdf8373.js"></script>
 
-        HTML source<br>
-        <a href="https://github.com/looksgoood/dapp_study/blob/master/dapp_simplestorage/simplestorage.html">LInk</a>
         <br><br>
         <p>
             <a href="https://github.com/looksgoood">looksgoood github link</a>
         </p>
     </body>
     <script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
+    <!-- <script src="dist/web3.min.js"></script> -->
     <!-- script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script -->
-    <script src="simplestorage.js"></script>
+    <script src="simplesurvey.js"></script>
     
 </html>
